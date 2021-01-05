@@ -1,0 +1,30 @@
+{
+    "coc.preferences.extensionUpdateCheck": "daily",
+    
+    "suggest.noselect": true,
+    "suggest.enablePreselect": false,
+    "codeLens.enable": true,
+
+    "coc.preferences.formatOnSaveFiletypes": ["json"],
+
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args":  ["start"],
+            "filetype":  ["sh"],
+            "ignoredRootPaths":  []
+                },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    }
+}
+
+
